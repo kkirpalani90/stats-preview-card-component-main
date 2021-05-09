@@ -11,11 +11,14 @@ body {
 @media screen and (min-width: 1025px) /* Desktop Version */ {
   .container {
     background-color: hsl(244, 38%, 16%);
-    margin: 16.67rem;
+    /* USE THIS TO CENTER-ALIGN THE CONTAINER */
+    margin: 100px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border-radius: 5px 0 0 5px;
+    /* KEEP THE WIDTH STATIC INSTEAD OF APPLYING DYNAMIC MARGINS */
+    width: 1090px;
   }
 
   .left {
@@ -48,6 +51,8 @@ body {
   .right {
     grid-column: 2 / 2;
     grid-row: 1 / 4;
+    /* USED THE SAME WIDTH AS THAT OF IMAGE */
+    width: 545px;
   }
 
   .pic {
@@ -57,11 +62,15 @@ body {
     min-width: 100%;
     min-height: 100%;
     border-radius: 0 5px 5px 0;
+    /* USED THE SAME WIDTH AS THAT OF IMAGE */
+    width: 545px;
   }
 
   .pic img {
     mix-blend-mode: overlay;
     border-radius: 0 5px 5px 0;
+    /* IMAGE WAS 5px SHORTER SO 100% HEIGHT */
+    height: 100%;
   }
 
   .stats {
