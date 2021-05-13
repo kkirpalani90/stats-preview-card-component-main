@@ -8,6 +8,7 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   background-color: hsl(233, 47%, 7%);
 }
+
 @media screen and (min-width: 1025px) /* Desktop Version */ {
   .container {
     background-color: hsl(244, 38%, 16%);
@@ -21,7 +22,7 @@ body {
     width: 1090px;
   }
 
-  .left {
+  .description {
     margin: 0rem 1rem;
     grid-column: 1 / 1;
     grid-row: 1 / 4;
@@ -48,21 +49,15 @@ body {
     color: hsla(0, 0%, 100%, 0.75); /* Slightly Transparent White */
   }
 
-  .right {
+  .pic {
     grid-column: 2 / 2;
     grid-row: 1 / 4;
-    /* USED THE SAME WIDTH AS THAT OF IMAGE */
-    width: 545px;
-  }
-
-  .pic {
     height: 100%;
     background-color: hsl(277, 64%, 61%);
     opacity: 0.20;
     min-width: 100%;
     min-height: 100%;
     border-radius: 0 5px 5px 0;
-    /* USED THE SAME WIDTH AS THAT OF IMAGE */
     width: 545px;
   }
 
