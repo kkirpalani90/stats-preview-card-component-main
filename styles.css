@@ -27,7 +27,6 @@ body {
 }
 
 h1 {
-  padding: 4rem 4rem 2.75rem 4rem;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: hsl(0, 0%, 100%); /* White */
@@ -73,6 +72,7 @@ h1 {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -80,50 +80,74 @@ h1 {
 @media screen and (min-width:375px) /* Mobile Version */ {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
     border-radius: 5px 5px 0 0;
+    margin: 100px auto;
   }
 
   .pic {
-    grid-row: 1 / 6;
+    grid-row: 1 / 1;
     border-radius: 5px 5px 0 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
   }
 
   .pic img {
     border-radius: 5px 5px 0 0;
   }
-
+ 
   h1 {
-    grid-row: 2 / 6;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
     text-align: center;
+    margin: 2rem 10rem;
     }
 
-  .insights {
+  .main_paragraph {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
     text-align: center;
+    margin: 1rem 8rem;
   }
 
-  .main_paragraph {
-    grid-row: 3 / 6;
+  .stats {
+    margin: auto;
+    grid-column: 1 / 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .companies {
     margin: auto;
-    grid-row: 4 / 6;
+    grid-row: 1 / 1;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
+  }
+  .stat_heading1 {
+    grid-row: 1 / 1;
   }
 
   .templates {
     margin: auto;
-    grid-row: 5 / 6;
+    grid-row: 2 / 2;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
+  }
+  .stat_heading2 {
+    grid-row: 1 / 1;
   }
 
   .queries {
     margin: auto;
-    grid-row: 6 / 6;
+    grid-row: 3 / 3;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
   }
 
+  .stat_heading3 {
+    grid-row: 1 / 1;
+  }
 }
 
 @media screen and (min-width: 1025px) /* Desktop Version */ {
@@ -160,6 +184,7 @@ h1 {
   }
 
   h1 {
+    padding: 4rem 4rem 2.75rem 4rem;
     text-align: left;
   }
 
