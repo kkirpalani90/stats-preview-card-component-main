@@ -167,9 +167,19 @@ h1 {
     grid-row: 1 / 4;
   }
 
+  h1 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    padding: 4rem 4rem 2.75rem 4rem;
+    text-align: left;
+    margin: 0;
+  }
+
   .main_paragraph {
     grid-column: 1 / 1;
     grid-row: 2 / 2;
+    text-align: left;
+    margin: 0 3rem 0 4rem;
   }
 
   .pic {
@@ -177,16 +187,13 @@ h1 {
     grid-row: 1 / 4;
     border-radius: 0 5px 5px 0;
     width: 545px;
+    height: 450px;
   }
 
   .pic img {
     border-radius: 0 5px 5px 0;
   }
 
-  h1 {
-    padding: 4rem 4rem 2.75rem 4rem;
-    text-align: left;
-  }
 
   .stats {
     margin: 4.267rem 1.067rem;
